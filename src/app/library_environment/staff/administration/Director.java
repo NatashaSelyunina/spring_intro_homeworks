@@ -3,10 +3,14 @@ package app.library_environment.staff.administration;
 import app.library_environment.staff.employees.Librarian;
 import app.library_environment.staff.employees.SecurityGuard;
 import app.library_environment.staff.employees.ServiceManager;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Director {
+    @Autowired
     private Librarian librarian;
+    @Autowired
     private SecurityGuard securityGuard;
+    @Autowired
     private ServiceManager serviceManager;
 
     public void manage() {

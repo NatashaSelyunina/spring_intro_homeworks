@@ -2,9 +2,12 @@ package app.library_environment.main_essence;
 
 import app.library_environment.separate_entities.Reader;
 import app.library_environment.staff.administration.Director;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Library {
+    @Autowired
     private Reader reader;
+    @Autowired
     private Director director;
 
     public void manageLibrary() {

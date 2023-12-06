@@ -1,6 +1,9 @@
 package app.library_environment.separate_entities;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Reader {
+    @Autowired
     private Book book;
 
     public void giveBook() {
