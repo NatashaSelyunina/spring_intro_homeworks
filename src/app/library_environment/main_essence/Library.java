@@ -1,47 +1,15 @@
 package app.library_environment.main_essence;
 
 import app.library_environment.separate_entities.Reader;
-import app.library_environment.staff.Librarion;
-import app.library_environment.staff.SecurityGuard;
-import app.library_environment.staff.ServiceManager;
-
-import java.util.List;
+import app.library_environment.staff.administration.Director;
 
 public class Library {
-    private Librarion librarion;
-    private SecurityGuard securityGuard;
-    private ServiceManager serviceManager;
     private Reader reader;
+    private Director director;
 
     public void manageLibrary() {
-        librarion.read();
-        securityGuard.work();
-        serviceManager.work();
         reader.giveBook();
-    }
-
-    public Librarion getLibrarion() {
-        return librarion;
-    }
-
-    public void setLibrarion(Librarion librarion) {
-        this.librarion = librarion;
-    }
-
-    public SecurityGuard getSecurityGuard() {
-        return securityGuard;
-    }
-
-    public void setSecurityGuard(SecurityGuard securityGuard) {
-        this.securityGuard = securityGuard;
-    }
-
-    public ServiceManager getServiceManager() {
-        return serviceManager;
-    }
-
-    public void setServiceManager(ServiceManager serviceManager) {
-        this.serviceManager = serviceManager;
+        director.manage();
     }
 
     public Reader getReader() {
@@ -50,5 +18,13 @@ public class Library {
 
     public void setReader(Reader reader) {
         this.reader = reader;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
     }
 }

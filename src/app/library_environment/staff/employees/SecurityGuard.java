@@ -1,4 +1,4 @@
-package app.library_environment.staff;
+package app.library_environment.staff.employees;
 
 public class SecurityGuard {
 
